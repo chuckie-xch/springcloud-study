@@ -1,0 +1,13 @@
+server:
+  port: 8040
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chuckie-xch/springcloud-study/      # 配置git仓库地址
+          search-paths: config-repo                                  # git仓库下的相对地址，可以配置多个，用，隔开
+          username: chuckie-xch
+          password: WW616322xia
